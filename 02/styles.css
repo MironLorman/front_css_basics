@@ -1,3 +1,0 @@
-a[href^="as.com"]:not([href^="a"]) {
-  color: red;
-}
