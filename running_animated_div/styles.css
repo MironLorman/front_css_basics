@@ -1,0 +1,39 @@
+.anime {
+  width: 20%;
+  height: 200px;
+  background-color: rgb(146, 208, 146);
+  text-align: center;
+}
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(45deg);
+    background-color: red;
+  }
+}
+@keyframes run {
+  0% {
+    transform: translateX(0px);
+  }
+  100% {
+    transform: translateX(300px);
+  }
+}
+/* .anime:hover {
+  animation-name: rotation, run;
+  animation-duration: 1s, 2s;
+  animation-timing-function: linear, cubic-bezier(0.075, 0.82, 0.165, 1);
+  animation-delay: 2s, 4s;
+  animation-iteration-count: 2, 5;
+  animation-direction: alternate, alternate;
+  animation-fill-mode: none, forwards;
+} */
+.anime:hover {
+  -webkit-animation: rotation 1s linear 2s 2 alternate none,
+    run 2s cubic-bezier(0.075, 0.82, 0.165, 1) 4s 5 alternate forwards;
+}
+.anime:active {
+  -webkit-animation-play-state: paused;
+}
