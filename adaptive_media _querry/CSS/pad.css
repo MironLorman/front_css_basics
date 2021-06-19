@@ -1,0 +1,15 @@
+@media (min-width: 481px) and (max-width: 768px) {
+  .sidebar2 {
+    float: none;
+    width: auto;
+    clear: both;
+    border-top: 2px solid black;
+    padding-top: 10px;
+  }
+  .columnWrapper {
+    width: auto;
+  }
+  .main {
+    border-right: none;
+  }
+}

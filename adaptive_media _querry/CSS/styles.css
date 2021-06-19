@@ -1,0 +1,3 @@
+@import url("main.css");
+@import url("pad.css") (min-width: 481px) and (max-width: 768px);
+@import url("mobile.css") (max-width: 480px);
