@@ -1,0 +1,6 @@
+@mixin mq-small-up {
+  @media (min-width: $screen-small + 200px) {
+    color: blue;
+    @content;
+  }
+}

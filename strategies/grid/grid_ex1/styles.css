@@ -1,0 +1,27 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.wrapper div {
+  padding: 1em;
+  background-color: rgb(213, 165, 75);
+}
+.wrapper .light {
+  background-color: rgb(232, 221, 177);
+}
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 1em;
+  grid-auto-rows: minmax(100px, auto);
+}
+.included {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 1em;
+  grid-auto-rows: 80px;
+}
+.wrapper .included {
+  background-color: rgb(63, 42, 13);
+}

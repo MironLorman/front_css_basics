@@ -1,0 +1,21 @@
+.container {
+  display: grid;
+  grid-template-areas:
+    "header header"
+    "content sidebar";
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 200px 200px;
+  grid-gap: 20px;
+}
+.header {
+  background-color: red;
+  grid-area: header;
+}
+.sidebar {
+  background-color: red;
+  grid-area: sidebar;
+}
+.content {
+  background-color: red;
+  grid-area: content;
+}
